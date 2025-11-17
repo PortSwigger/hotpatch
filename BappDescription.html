@@ -1,0 +1,31 @@
+<p>Burp Hotpatch offers pentesters a streamlined method to hook into critical BurpSuite functions using self-written scripts. This enhancement to your toolkit allows you to alter and augment Burp Suites default functionality, creating a more customized penetration testing experience.</p>
+
+<h2>Features</h2>
+
+<ul>
+    <li>Supports Javascript and Python scripting languages.</li>
+    <li>Includes a user-friendly script editor with syntax highlighting.</li>
+    <li>Allows concurrent activation of multiple scripts.</li>
+    <li>Facilitates easy debugging workflows.</li>
+    <li>Enables users to add custom actions to the context menu for quick tool execution.</li>
+    <li>Seamless integration with the Montoya API within Burp.</li>
+    <li>Inbuilt task manager to control utility execution and context menu actions.</li>
+    <li>Provides shared variables between scripts.</li>
+</ul>
+
+<h2>Usage</h2>
+
+<p>Burp Hotpatch can be used in the following scenarios:</p>
+<ul>
+    <li>Session handling actions requiring further processing after session macro execution.</li>
+    <li>Writing payload processors for Intruder.</li>
+    <li>Scenarios where Bambda expressions are inadequate.</li>
+    <li>Prototyping and testing.</li>
+    <li>Automation/integration with other tools.</li>
+</ul>
+
+<p>Burp Hotpatch handles <code class=InlineCode>ContextMenuItemsProvider</code>, <code class=InlineCode>HttpHandler</code>, <code class=InlineCode>ProxyRequestHandler</code>, <code class=InlineCode>SessionHandlingAction</code>, and <code class=InlineCode>PayloadProcessor</code> events. Upon occurrence of these events, any relevant user scripts are executed.</p>
+
+<p>Users can create scripts that incorporate handlers for various Burp Suite functions or stand-alone scripts that can run interactively within Burp Suite. Potential script types include Utility, Http Handler, Proxy Handler, Session Handling Action, Payload Processor, and Context Menu Action. Due to security reasons, all scripts must be enabled whenever the extension is loaded.</p>
+
+<p>Errors or exceptions in scripts highlight the script in red and provide STDERR for review. Alternatively, users can print debugging information to STDOUT. All scripts use the Montoya API to interact with Burp Suite and are executed in a GraalVM environment. Scripts can be written in either Python or JavaScript.</p>

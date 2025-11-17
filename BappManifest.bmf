@@ -1,0 +1,13 @@
+Uuid: 1c145cc47f5f4540bdc782856b52af65
+ExtensionType: 1
+Name: Hotpatch
+RepoName: hotpatch
+ScreenVersion: 1.0.18
+SerialVersion: 1
+MinPlatformVersion: 19
+ProOnly: False
+Author: softwaresecured
+ShortDescription: Allows pentesters to integrate user-defined scripts with key BurpSuite functions for enhanced functionality, automation, and testing. Supports multiple languages, easy debugging, and interaction with the Montoya API.
+EntryPoint: target_repo.jar
+BuildCommand: ./gradlew build
+SupportedProducts: Pro, Community
