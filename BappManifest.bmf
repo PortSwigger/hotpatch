@@ -5,9 +5,9 @@ RepoName: hotpatch
 ScreenVersion: 1.0.18
 SerialVersion: 1
 MinPlatformVersion: 19
-ProOnly: False
+ProOnly: True
 Author: softwaresecured
-ShortDescription: Allows pentesters to integrate user-defined scripts with key BurpSuite functions for enhanced functionality, automation, and testing. Supports multiple languages, easy debugging, and interaction with the Montoya API.
+ShortDescription: Allows pentesters to integrate user-defined Python or JavaScript scripts with key BurpSuite functions for enhanced functionality, automation, and testing.
 EntryPoint: target_repo.jar
 BuildCommand: ./gradlew build
-SupportedProducts: Pro, Community
+SupportedProducts: Pro
