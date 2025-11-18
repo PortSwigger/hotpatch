@@ -6,7 +6,7 @@ ScreenVersion: 1.0.18
 SerialVersion: 2
 MinPlatformVersion: 19
 ProOnly: True
-Author: softwaresecured
+Author: Software Secured
 ShortDescription: Allows pentesters to integrate user-defined Python or JavaScript scripts with key BurpSuite functions for enhanced functionality, automation, and testing.
 EntryPoint: target_repo.jar
 BuildCommand: ./gradlew build
